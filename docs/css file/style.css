@@ -10,6 +10,8 @@ body {
   font-family: sans-serif;
   font-size: 1em;
   overflow-x: hidden;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+  color: #fff;
 }
 /* this add class is not access in html but I will add this class through js */
 body.add {
@@ -27,7 +29,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0 0 0);
+  background: linear-gradient(135deg, #ff6ec4, #7873f5); /* ✨ new background */
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +52,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5); /* ✨ new background */
   /* transform: scale(0); */
 }
 .heading {
@@ -198,4 +200,17 @@ footer p {
   #heading {
     font-size: 3.5em;
   }
+}
+button {
+  background: #ff6ec4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff92d0;
 }
